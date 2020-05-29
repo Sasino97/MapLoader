@@ -32,7 +32,7 @@ namespace Sasinosoft.MapConverter
 
                 string content = File.ReadAllText(fileName);
                 string[] lines = content.Split('\n');
-                string output = "# Converted by Sasinosoft Map Converter\n\n# Constants\nK DefaultInterior -1\nK DefaultVW -1\nK DefaultDrawDist 200.0\nK DefaultStreamDist 200.0\n\n# Scene data\n";
+                string output = "# Converted by Sasinosoft Map Converter\n\n# Constants\nK DefaultInterior -1\nK DefaultVW -1\nK DefaultStreamDist 200.0\nK DefaultDrawDist 200.0\n\n# Scene data\n";
 
                 foreach (string line_ in lines)
                 {
@@ -55,7 +55,7 @@ namespace Sasinosoft.MapConverter
                         output += values[5].Trim(' ', '(', ')') + " ";
                         output += values[6].Trim(' ', '(', ')') + " ";
 
-                        output += "DefaultVW DefaultInterior DefaultDrawDist DefaultStreamDist\n";
+                        output += "DefaultVW DefaultInterior DefaultStreamDist DefaultDrawDist\n";
                     }
                     else if (line.StartsWith("CreateVehicle"))
                     {
