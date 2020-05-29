@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Sasinosoft.MapLoader</RootNamespace>
+    <AssemblyName>Sasinosoft.MapLoader</AssemblyName>
+    <Copyright>Copyright (c) 2019-2020 Sasinosoft</Copyright>
+    <Description>Loads SA-MP Maps Written In The Sasinosoft Map Language 1.1</Description>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+    <Version>1.1.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SampSharp.Core" Version="0.9.0" />
+    <PackageReference Include="SampSharp.GameMode" Version="0.9.0" />
+    <PackageReference Include="SampSharp.Streamer" Version="0.9.0" />
+  </ItemGroup>
+
+</Project>
